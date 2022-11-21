@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: kirthicharmpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kirthicharmpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: kirthicharmpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: kirthicharmpipelinesjavascriptdocker 
+          image: mycontainerregistry7255.azurecr.io/kirthicharmpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
