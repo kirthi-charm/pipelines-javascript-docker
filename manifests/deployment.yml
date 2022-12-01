@@ -16,4 +16,4 @@ spec:
         - name: kirthicharmpipelinesjavascriptdocker 
           image: mycontainerregistry7255.azurecr.io/kirthicharmpipelinesjavascriptdocker
           ports:
-          - containerPort: 8080
+          - containerPort: 7600
